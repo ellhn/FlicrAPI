@@ -1,0 +1,5 @@
+<div class="{{member.classname}} "ng-click="gallery.clickPage(member.content)" 
+ng-class="{'clicked':gallery.current_page===member.content && member.content!=='...','visible': member.content==='Previous' && gallery.current_page===1,
+'displayed': member.content==='Next' && gallery.current_page===gallery.total_pages}"> 
+   {{member.content}}
+</div>

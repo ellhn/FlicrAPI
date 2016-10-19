@@ -1,0 +1,11 @@
+<div id="left-arrow" ng-click="gallery.leftArrow()">
+  <img src="img/left-arrow.png" /> 
+</div>
+<div id="right-arrow" ng-click="gallery.rightArrow()">
+  <img src="img/right-arrow.png" /> 
+</div>  
+<div class="main-photo-frame" ng-class="{'visible':gallery.photos.length===0}">  
+  <a href='{{gallery.photos[gallery.current_index]}}' target="_blank"><img ng-src="{{gallery.photos[gallery.current_index]}}" alt="broken link"></a> 
+  <div class="title">IMG{{gallery.current_index+1}}</div>
+</div>  
+  

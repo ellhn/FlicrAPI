@@ -1,0 +1,8 @@
+<input  type="text" ng-model="gallery.search_tag" ng-change="gallery.active=false" ng-keypress="$event.key === 'Enter' && gallery.initialize()" 
+placeholder="Search"/>
+<div id="icon1" ng-click="gallery.initialize()" ng-class="{'visible':gallery.active}">
+ <img src="img/magnifier.png"/>
+</div>
+<div id="icon2" ng-click="gallery.search_tag='';gallery.active=false" ng-class="{'visible':!gallery.active}">
+ <img src="img/clear-button.png"/>
+</div>

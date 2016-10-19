@@ -1,0 +1,25 @@
+<html ng-app="myapp">
+<head>
+  <meta charset="UTF-8" />
+  <title>Coding challenge</title>
+  <script src="https://code.angularjs.org/1.5.3/angular.min.js"></script>
+  <link rel="stylesheet" type="text/css" media="all" href="F1000.css" />
+</head>
+<body>
+ 
+ <section ng-controller="GalleryController as gallery" >
+    <div id="legend">My Gallery</div>
+    <div id="fr" search-directive></div>
+    <div class="main-photo-area" main-photo-directive></div>
+    <article> 
+       <div photo-directive ng-repeat="photo in gallery.photos" ></div>
+    </article>
+    <div class="clear"></div>
+    <nav footer-directive ng-repeat="member in gallery.divs"></nav>
+  </section> 
+
+<script src="js/service.js"></script>
+<script src="js/controller.js"></script>
+<script src="js/directive.js"></script>
+</body>
+</html>
